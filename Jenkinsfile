@@ -3,7 +3,7 @@ pipeline {
 	stages {
         stage('Run Docker Compose') {
             steps {               
-		echo "Welcome to PHP"
+		sudo 'docker-compose up -d'
             }
         }        
     }
